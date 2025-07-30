@@ -30,6 +30,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		45BA95F62E3AA3D500DF19DB /* screenshots */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = screenshots;
+			sourceTree = "<group>";
+		};
 		45F5C5C52E3A679400B6A044 /* TodoList */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = TodoList;
@@ -79,6 +84,7 @@
 				45F5C5D32E3A679600B6A044 /* TodoListTests */,
 				45F5C5DD2E3A679600B6A044 /* TodoListUITests */,
 				45F5C5C42E3A679400B6A044 /* Products */,
+				45BA95F62E3AA3D500DF19DB /* screenshots */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +114,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				45BA95F62E3AA3D500DF19DB /* screenshots */,
 				45F5C5C52E3A679400B6A044 /* TodoList */,
 			);
 			name = TodoList;

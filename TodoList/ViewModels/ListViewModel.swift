@@ -23,6 +23,17 @@ class ListViewModel : ObservableObject {
         items.append(contentsOf: newItems)
     }
     
+    func addItem(title: String) {
+        let newItem = ItemModel(title: title, isCompleted: false)
+        items.append(newItem)
+    }
+    
+    func toggleCompletion(item: ItemModel) {
+        if let index = items.firstIndex(where: { $0.id == item.id }) {
+            items[index].isCompleted.toggle()
+        }
+    }
+    
     func deleteItem(indexSet: IndexSet) {
         items.remove(atOffsets: indexSet)
     }
