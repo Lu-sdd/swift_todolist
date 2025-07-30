@@ -1,0 +1,33 @@
+//
+//  ListViewModel.swift
+//  TodoList
+//
+//  Created by Lu Han on 30/07/2025.
+//
+
+import Foundation
+
+class ListViewModel : ObservableObject {
+    @Published var items : [ItemModel] = []
+    
+    init(){
+        getItems()
+    }
+    
+    func getItems() {
+        let newItems = [
+            ItemModel(title: "first item", isCompleted: false),
+            ItemModel(title: "second item", isCompleted: false),
+            ItemModel(title: "third item", isCompleted: true),
+        ]
+        items.append(contentsOf: newItems)
+    }
+    
+    func deleteItem(indexSet: IndexSet) {
+        items.remove(atOffsets: indexSet)
+    }
+    
+    func moveItem(from: IndexSet, to: Int){
+        items.move(fromOffsets: from, toOffset: to)
+    }
+}
