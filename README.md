@@ -15,6 +15,21 @@ This is a minimalist Todo List iOS app built with **SwiftUI** and following the 
 
 ---
 
+## 📱 Screenshots
+
+### Main Todo List View
+<img src="TodoList/screenshots/ListView.png" width="300" alt="Main todo list view">
+
+### Swipe to Delete
+<img src="TodoList/screenshots/ListView-delete.png" width="300" alt="Swipe to delete demo">
+
+### Edit Mode - Drag to Reorder
+<img src="TodoList/screenshots/ListView-move.png" width="300" alt="Edit mode drag and drop">
+
+### Add Item View
+<img src="TodoList/screenshots/AddView.png" width="300" alt="Add item view">
+
+
 ## 🚧 Features in Progress
 
 - ➕ Add new todo items via input view
