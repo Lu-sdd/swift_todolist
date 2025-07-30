@@ -24,7 +24,7 @@ This is a minimalist Todo List iOS app built with **SwiftUI** and following the 
 <img src="TodoList/screenshots/ListView-delete.png" width="300" alt="Swipe to delete demo">
 
 ### Edit Mode - Drag to Reorder
-<img src="TodoList/screenshots/ListView-move.png" width="300" alt="Edit mode drag and drop">
+<img src="TodoList/screenshots/Listview-move.png" width="300" alt="Edit mode drag and drop">
 
 ### Add Item View
 <img src="TodoList/screenshots/AddView.png" width="300" alt="Add item view">
