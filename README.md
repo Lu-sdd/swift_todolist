@@ -8,6 +8,8 @@ This is a minimalist Todo List iOS app built with **SwiftUI** and following the 
 
 ## ✅ Features (Implemented)
 
+- ➕ **Add new todo items** via input view
+- ✅ **Toggle item completion** (tap checkbox to mark done/undone)
 - 🗑 **Swipe to delete** a todo item (right to left gesture)
 - ☑️ **Reorder items** via drag and drop (after tapping "Edit")
 - 📋 Clean, simple UI for listing todo tasks
@@ -18,26 +20,30 @@ This is a minimalist Todo List iOS app built with **SwiftUI** and following the 
 ## 📱 Screenshots
 
 ### Main Todo List View
-<img src="TodoList/screenshots/ListView.png" width="300" alt="Main todo list view">
+<img src="screenshots/AddView.png" width="300" alt="Main todo list view">
 
 ### Swipe to Delete
-<img src="TodoList/screenshots/ListView-delete.png" width="300" alt="Swipe to delete demo">
+<img src="screenshots/ListView-delete.png" width="300" alt="Swipe to delete demo">
 
 ### Edit Mode - Drag to Reorder
-<img src="TodoList/screenshots/Listview-move.png" width="300" alt="Edit mode drag and drop">
+<img src="screenshots/Listview-move.png" width="300" alt="Edit mode drag and drop">
 
 ### Add Item View
-<img src="TodoList/screenshots/AddView.png" width="300" alt="Add item view">
+<img src="screenshots/AddView.png" width="300" alt="Add item view">
+
+### Toggle Completion
+<img src="screenshots/toggle.png" width="300" alt="Toggle completion status">
 
 
-## 🚧 Features in Progress
+## 🧠 Future Ideas
 
-- ➕ Add new todo items via input view
-- 📝 Toggle item completion (e.g., mark as done)
+- 💾 Add data persistence (e.g., using `UserDefaults` or `CoreData`)
+- 🌙 Implement light/dark mode toggle
+- 📱 UI polish and subtle animations
 
 ---
 
-## 🧠 Architecture
+## 🏗️ Architecture
 
 The app uses the **MVVM** (Model-View-ViewModel) design pattern:
 
@@ -64,14 +70,6 @@ Through this project, I’m practicing:
 - Gesture-based interactions (swipe to delete, drag to move)
 - MVVM structure in SwiftUI
 - Data flow with `@Published` and `@StateObject`
-
----
-
-## 🧪 Next Steps
-
-- Finish the "Add Todo" view and logic
-- Add toggle for marking items as completed
-- Optionally add data persistence (UserDefaults or CoreData)
 
 ---
 
