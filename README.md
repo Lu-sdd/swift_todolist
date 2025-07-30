@@ -2,8 +2,6 @@
 
 This is a minimalist Todo List iOS app built with **SwiftUI** and following the **MVVM architecture**. The project is part of my personal learning journey to practice native iOS development using Swift.
 
-> ⚠️ The app is currently under development. So far, delete and reorder functionalities are completed. The feature for adding new todo items is in progress.
-
 ---
 
 ## ✅ Features (Implemented)
