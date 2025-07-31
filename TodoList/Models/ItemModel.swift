@@ -11,4 +11,5 @@ struct ItemModel: Identifiable {
     let id: String = UUID().uuidString
     let title: String
     var isCompleted: Bool
+    var deadline: Date? // 新增
 }

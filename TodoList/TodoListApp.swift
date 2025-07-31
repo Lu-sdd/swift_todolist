@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct TodoListApp: App {
-    
+    @AppStorage("isDarkMode") private var isDarkMode = false
     @StateObject var listViewModel: ListViewModel = ListViewModel()
     
     var body: some Scene {
@@ -18,6 +18,7 @@ struct TodoListApp: App {
                 ListView()
             }
             .environmentObject(listViewModel)
+            .preferredColorScheme(isDarkMode ? .dark : .light)
         }
     }
 }

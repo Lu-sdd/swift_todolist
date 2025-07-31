@@ -13,6 +13,8 @@ struct AddView: View {
     @Environment(\.dismiss) var dismiss
     @State var textFieldText: String = ""
     @State var showAlert: Bool = false
+    @State var deadline: Date? = nil
+    @State var showDatePicker: Bool = false
     
     var body: some View {
         ScrollView{
@@ -22,6 +24,35 @@ struct AddView: View {
                     .frame(height: 55)
                     .background(Color.gray.opacity(0.3))
                     .cornerRadius(10)
+                
+                Button(action: { showDatePicker.toggle() }) {
+                    HStack {
+                        Image(systemName: "calendar")
+                        if let deadline = deadline {
+                            Text(deadline, formatter: dateFormatter)
+                        } else {
+                            Text("Select the deadline")
+                        }
+                    }
+                    .foregroundColor(.accentColor)
+                    .frame(maxWidth: .infinity)
+                    .padding()
+                    .background(Color.gray.opacity(0.15))
+                    .cornerRadius(10)
+                }
+                if showDatePicker {
+                    DatePicker(
+                        "",
+                        selection: Binding(get: {
+                            deadline ?? Date()
+                        }, set: { newValue in
+                            deadline = newValue
+                        }),
+                        displayedComponents: [.date, .hourAndMinute] // 支持日期和时间
+                    )
+                    .datePickerStyle(.graphical)
+                    .labelsHidden()
+                }
                 
                 Button(action: saveButtonPressed, label: {
                     Text("Save".uppercased())
@@ -45,7 +76,7 @@ struct AddView: View {
     
     func saveButtonPressed() {
         if textIsAppropriate() {
-            listViewModel.addItem(title: textFieldText)
+            listViewModel.addItem(title: textFieldText, deadline: deadline)
             dismiss()
         }
     }
@@ -57,6 +88,12 @@ struct AddView: View {
         }
         return true
     }
+}
+
+private var dateFormatter: DateFormatter {
+    let formatter = DateFormatter()
+    formatter.dateStyle = .medium
+    return formatter
 }
 
 #Preview {

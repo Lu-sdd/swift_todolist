@@ -10,6 +10,7 @@ import SwiftUI
 struct ListView: View {
     
     @EnvironmentObject var listViewModel: ListViewModel
+    @AppStorage("isDarkMode") private var isDarkMode = false
     
     var body: some View {
         List{
@@ -24,7 +25,14 @@ struct ListView: View {
         .navigationBarItems(
             leading: EditButton(),
             trailing:
-                NavigationLink("Add", destination: AddView())
+                HStack {
+                    Button(action: {
+                        isDarkMode.toggle()
+                    }) {
+                        Image(systemName: isDarkMode ? "moon.fill" : "sun.max.fill")
+                    }
+                    NavigationLink("Add", destination: AddView())
+                }
         )
     }
 }

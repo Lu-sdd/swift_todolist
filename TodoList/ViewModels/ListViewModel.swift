@@ -23,8 +23,8 @@ class ListViewModel : ObservableObject {
         items.append(contentsOf: newItems)
     }
     
-    func addItem(title: String) {
-        let newItem = ItemModel(title: title, isCompleted: false)
+    func addItem(title: String, deadline: Date? = nil) {
+        let newItem = ItemModel(title: title, isCompleted: false, deadline: deadline)
         items.append(newItem)
     }
     
