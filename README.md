@@ -20,7 +20,7 @@ This is a minimalist Todo List iOS app built with **SwiftUI** and following the 
 ## 📱 Screenshots
 
 ### Main Todo List View
-<img src="screenshots/AddView.png" width="300" alt="Main todo list view">
+<img src="screenshots/home page.png" width="300" alt="Main todo list view">
 
 ### Swipe to Delete
 <img src="screenshots/ListView-delete.png" width="300" alt="Swipe to delete demo">
@@ -28,11 +28,14 @@ This is a minimalist Todo List iOS app built with **SwiftUI** and following the 
 ### Edit Mode - Drag to Reorder
 <img src="screenshots/Listview-move.png" width="300" alt="Edit mode drag and drop">
 
-### Add Item View
-<img src="screenshots/AddView.png" width="300" alt="Add item view">
+### Add Item and Select Deadline
+<img src="screenshots/set ddl.png" width="300" alt="Add item view">
 
 ### Toggle Completion
 <img src="screenshots/toggle.png" width="300" alt="Toggle completion status">
+
+### Change to dark mode
+<img src="screenshots/dark mode.png" width="300" alt="Toggle completion status">
 
 
 ## 🧠 Future Ideas
