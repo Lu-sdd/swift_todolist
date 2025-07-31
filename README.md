@@ -8,10 +8,12 @@ This is a minimalist Todo List iOS app built with **SwiftUI** and following the 
 
 - ➕ **Add new todo items** via input view
 - ✅ **Toggle item completion** (tap checkbox to mark done/undone)
+- 📅 Set and display deadline for each todo item
 - 🗑 **Swipe to delete** a todo item (right to left gesture)
 - ☑️ **Reorder items** via drag and drop (after tapping "Edit")
 - 📋 Clean, simple UI for listing todo tasks
 - 📐 Built using the **MVVM pattern** for better separation of concerns
+- 🌗 Light/Dark mode toggle with one tap
 
 ---
 
@@ -35,9 +37,8 @@ This is a minimalist Todo List iOS app built with **SwiftUI** and following the 
 
 ## 🧠 Future Ideas
 
-- 💾 Add data persistence (e.g., using `UserDefaults` or `CoreData`)
-- 🌙 Implement light/dark mode toggle
 - 📱 UI polish and subtle animations
+- 🛎 Notifications for upcoming deadlines
 
 ---
 
